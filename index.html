@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Endêmica - Curiosidades Botânicas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff5f7;
+            color: #4a1525;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #b81d48;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #f4729b;
+        }
+
+        .container-limite {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: #ffe4ec;
+            font-weight: 300;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background-color: #ffffff;
+            border: 1px solid #f9cbd8;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .post-imagem {
+            width: 240px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #fce7ed;
+            border: 1px solid #f4729b;
+            flex-shrink: 0;
+        }
+
+        .post-conteudo {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-conteudo h2 {
+            color: #9e1239;
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: #d6336c;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .post-conteudo p {
+            font-size: 0.98rem;
+            color: #592534;
+            margin-bottom: 18px;
+        }
+
+        .post-rodape {
+            display: flex;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .btn-reacao {
+            background-color: #fff0f4;
+            border: 1px solid #f4729b;
+            color: #9e1239;
+            padding: 6px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-reacao:hover {
+            background-color: #ffe0e9;
+        }
+
+        .btn-reacao.ativo {
+            background-color: #b81d48;
+            color: #ffffff;
+            border-color: #b81d48;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            color: #9e1239;
+        }
+
+        @media (max-width: 650px) {
+            article {
+                flex-direction: column;
+            }
+
+            .post-imagem {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container-limite">
+            <h1>Flora Endêmica em Foco</h1>
+            <p>Explorando os segredos e curiosidades das espécies de flores nativas que só existem em ecossistemas específicos.</p>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <img class="post-imagem" src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=80" alt="Fotografia detalhada de flor delicada em tons de rosa e vermelho na natureza">
+            <div class="post-conteudo">
+                <h2>Flor-de-Maio: O Cacto Epífito da Serra do Mar</h2>
+                <span class="artigo-autor">Por Maria Clara Dos Santos</span>
+                <p>Diferente dos cactos tradicionais do deserto, a <em>Schlumbergera truncata</em> é endêmica das florestas úmidas do Sudeste brasileiro. Ela cresce sobre os troncos das árvores sem parasitá-las e floresce exatamente no outono, quando os dias ficam mais curtos, servindo de alimento vital para beija-flores.</p>
+                <div class="post-rodape">
+                    <button type="button" class="btn-reacao" aria-pressed="false">
+                        ❤️ <span class="contador">12</span>
+                    </button>
+                    <button type="button" class="btn-reacao" aria-pressed="false">
+                        👍 <span class="contador">8</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <img class="post-imagem" src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=600&q=80" alt="Ilustração botânica e macro de orquídea nativa exibindo coloração rosada intensa">
+            <div class="post-conteudo">
+                <h2>Cattleya walkeriana: A Joia dos Campos Rupestres</h2>
+                <span class="artigo-autor">Por Maria Clara Dos Santos</span>
+                <p>Nativa do Cerrado brasileiro, essa orquídea desenvolveu uma adaptação curiosa: suas hastes florais não nascem no topo do pseudobulbo, mas diretamente do rizoma, na base da planta. Sua fragrância adocicada é tão marcante que atrai abelhas polinizadoras a longas distâncias durante a estação seca.</p>
+                <div class="post-rodape">
+                    <button type="button" class="btn-reacao" aria-pressed="false">
+                        ❤️ <span class="contador">19</span>
+                    </button>
+                    <button type="button" class="btn-reacao" aria-pressed="false">
+                        👍 <span class="contador">15</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Projeto Educacional &bull; Desenvolvido por Maria Clara Dos Santos</p>
+    </footer>
+
+    <script>
+        const botoesReacao = document.querySelectorAll('.btn-reacao');
+
+        botoesReacao.forEach((botao) => {
+            botao.addEventListener('click', () => {
+                const spanContador = botao.querySelector('.contador');
+                let valorAtual = parseInt(spanContador.textContent, 10);
+
+                if (botao.classList.contains('ativo')) {
+                    botao.classList.remove('ativo');
+                    botao.setAttribute('aria-pressed', 'false');
+                    spanContador.textContent = valorAtual - 1;
+                } else {
+                    botao.classList.add('ativo');
+                    botao.setAttribute('aria-pressed', 'true');
+                    spanContador.textContent = valorAtual + 1;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
